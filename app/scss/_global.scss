@@ -12,6 +12,10 @@ html {
   display: flex;
   flex-direction: column;
 
+  &--mobile {
+    flex-direction: row;
+  }
+
   @media(min-width: 900px) {
     flex-direction: row;
   }

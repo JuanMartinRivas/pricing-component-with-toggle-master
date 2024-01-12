@@ -1,36 +1,59 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parcel Boilerplate</title>
-    <link rel="stylesheet" href="./app/scss/style.scss" />
-    <script type="module" src="./app/js/app.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Pricing Component with Toggle</title>
+  <link rel="stylesheet" href="./app/scss/style.scss" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script type="module" src="./app/js/app.js"></script>
+</head>
 
-  <body>
-    <main>
-      <div class="container">
-        <h1>Hello, World!</h1>
-        <div class="row">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            perferendis esse aspernatur fugit maiores dolorum voluptatem nemo
-            incidunt, quis, placeat fugiat, modi culpa omnis soluta commodi
-            veritatis. Consequatur, itaque repellendus!</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa quam
-            ad recusandae quibusdam, quaerat reiciendis consequuntur temporibus
-            modi laborum odit nisi optio, ex debitis! Ullam itaque et voluptates
-            enim eligendi.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem, minus et non odit sapiente ipsa quos, aperiam
-            doloribus quisquam aliquam accusantium esse cumque debitis!
-            Accusamus
-            adipisci numquam alias delectus in.</p>
+<body>
+  <main>
+    <div class="container">
+      <h1 class="title">Our Pricing</h1>
+      <div class="row--mobile">
+        <label for="toggle" class="label">Annually</label>
+        <input type="checkbox" id="toggle" class="input">
+        <label for="toggle" class="label">Monthly</label>
+      </div>
+      <div class="row">
+        <div class="card">
+          <h2 class="card__header">Basic</h2>
+          <h1 class="card__pricing">&dollar;19.99</h1>
+          <p class="card__info">500 GB Storage</p>
+          <p class="card__info">2 Users Allowed</p>
+          <p class="card__info">Send up to 3 GB</p>
+          <button class="card__button">Learn More</button>
+        </div>
+        <div class="card card--purple">
+          <h2 class="card__header">Professional</h2>
+          <h1 class="card__pricing">&dollar;24.99</h1>
+          <p class="card__info">1 TB Storage</p>
+          <p class="card__info">5 Users Allowed</p>
+          <p class="card__info">Send up to 10 GB</p>
+          <button class="card__button">Learn More</button>
+        </div>
+        <div class="card">
+          <h2 class="card__header">Master</h2>
+          <h1 class="card__pricing">&dollar;39.99</h1>
+          <p class="card__info">2 TB Storage</p>
+          <p class="card__info">10 Users Allowed</p>
+          <p class="card__info">Send up to 10 GB</p>
+          <button class="card__button">Learn More</button>
         </div>
       </div>
-    </main>
 
-  </body>
+
+      <!-- <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div> -->
+    </div>
+  </main>
+
+</body>
 
 </html>
