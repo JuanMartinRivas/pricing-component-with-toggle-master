@@ -1,4 +1,4 @@
-const toggle = document.querySelector(".input");
+const toggle = document.querySelector(".toggle-container__input");
 const prices = document.querySelectorAll(".card__pricing-span");
 
 toggle.addEventListener("click", handleToggle);
