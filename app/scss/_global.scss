@@ -10,7 +10,11 @@ body {
 .container {
   margin: 0 auto;
   width: 90%;
-  max-width: 1200px;
+  max-width: 400px;
+
+  @media(min-width: 900px) {
+    max-width: 1200px;
+  }
 }
 
 .row {
