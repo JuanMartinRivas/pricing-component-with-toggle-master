@@ -13,4 +13,94 @@ main {
         justify-content: center;
         gap: 1em;
     }
+
+    .cards-container {
+        margin-top: 5.5em;
+        margin-bottom: 4em;
+        justify-content: center;
+        gap: 2em;
+
+        .card {
+            background-color: #FFF;
+            border-radius: 10px;
+            box-shadow: 0 0 50px -40px #00000080;
+            -webkit-box-shadow: 0 0 50px -40px #00000080;
+            -moz-box-shadow: 0 0 50px -40px #00000080;
+            padding: 2em;
+
+            .card__header {
+                font-size: 1rem;
+                text-align: center;
+                color: $grayish-blue;
+            }
+
+            .card__pricing {
+                font-size: 2.5rem;
+                text-align: center;
+                margin-top: .5em;
+                margin-bottom: .5em;
+            }
+
+            .card__pricing-span {
+                font-size: 3.25rem;
+            }
+
+            .card__info {
+                font-size: 1rem;
+                text-align: center;
+                color: $grayish-blue;
+                border-top: solid 1px $very-light-grayish-blue;
+                padding: 1em;
+
+                &--bottom {
+                    border-bottom: solid 1px $very-light-grayish-blue;
+                }
+            }
+
+            .card__button {
+                width: 100%;
+                margin-top: 2em;
+                text-transform: uppercase;
+                color: #FFF;
+                background: $linear-gradient border-box;
+                border-radius: 7px;
+                border: solid 1px transparent;
+                letter-spacing: .1em;
+                padding: .75em;
+                cursor: pointer;
+                transition: .25s;
+
+                &:hover {
+                    color: $purple;
+                    background: #FFF;
+                    border: solid 1px $purple;
+                }
+            }
+
+            &--purple {
+                background: $linear-gradient;
+                color: #FFF;
+
+                .card__header {
+                    color: #FFF;
+                }
+
+                .card__info {
+                    color: #FFF;
+                }
+
+                .card__button {
+                    border: solid 1px transparent;
+                    background: #FFF;
+                    color: $purple;
+
+                    &:hover {
+                        color: #FFF;
+                        background: $linear-gradient border-box;
+                        border: solid 1px #FFF;
+                    }
+                }
+            }
+        }
+    }
 }
